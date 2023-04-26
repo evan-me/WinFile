@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#       ddl-auto: create
+    database: h2
+  datasource:
+    url: jdbc:h2:file:~/winfile;DB_CLOSE_ON_EXIT=FALSE
+    #        url: jdbc:h2:mem:~/wg-client;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 123456
